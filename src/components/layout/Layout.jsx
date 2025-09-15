@@ -21,9 +21,9 @@ function Layout() {
         <>
             {/* <!----------Pre-Loader----------!> */}
             <div
-                className={`pre-loader bg-linear-to-r from-[#111111]  via-[#333333] via-60% to-[#5e5e5e]  absolute w-[100vw] z-50 flex flex-col justify-center items-center ${isLoading ? 'h-[100vh]' : 'h-0 -translate-y-14 transition-height duration-400'}`}>
+                className={`pre-loader bg-linear-to-r from-[#111111]  via-[#333333] via-60% to-[#555555]  absolute w-[100vw] z-50 flex flex-col justify-center items-center ${isLoading ? 'h-[100vh]' : 'h-0 -translate-y-14 transition-height duration-400'}`}>
                 <img src="/logo.svg" alt="logo" />
-                <div className='my-4 text-xl sm:text-2xl tracking-[1rem] text-[#b5b5b5]'>
+                <div className='my-4 text-xl sm:text-2xl tracking-[1rem] text-[var(--text-primary)]'>
                     <span className='loading-animation'>R</span>
                     <span className='loading-animation'>E</span>
                     <span className='loading-animation'>S</span>
@@ -36,8 +36,8 @@ function Layout() {
                 </div>
             </div>
             {/* <!----------Header----------!> */}
-            <header className='w-full'>
-                <div className='max-w-[96vw] lg:max-w-[96vw] mx-auto'>
+            <header className='header-main'>
+                <div className='header-content'>
                     <TopBar />
                     <NavBar />
                 </div>

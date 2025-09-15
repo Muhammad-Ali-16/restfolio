@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+.topbar-icon::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    height: 15px;
+    width: 15px;
+    background-image: url(./assets/welcomeIcon.svg);
+    background-repeat: no-repeat;
+}
