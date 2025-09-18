@@ -18,14 +18,14 @@ function NavBar() {
           </div>
         </div>
         <NavBarContent Name='nav' AdditonalClass='hidden xl:flex' />
-        <Button Name={'nav-button'} Link={'contact'} Text={'Book A Table +'} />
+        <Button Name={'nav-button'} Link={'contact'} AdditonalClass='hidden xl:block bg-[var(--text-secondary)] text-[var(--text-light)]' Text={'Book A Table +'} />
         {/* -----------Toggle-Icon---------- */}
         <div className='toggler blcok xl:hidden cursor-pointer' onClick={() => { setIsOverlayOpen(!isOverlayOpen) }}>
           <i className={`bi bi-${isOverlayOpen ? 'x-lg' : 'list'} text-3xl`}></i>
         </div>
       </div>
       {/* -----------OverlayBar---------- */}
-      <div className="overlaybar-content m-4">
+      <div className="overlaybar-content mx-2">
         <NavBarContent Name={'overlay'} AdditonalClass='flex xl:hidden' ClassToggle={isOverlayOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'} />
       </div>
 
