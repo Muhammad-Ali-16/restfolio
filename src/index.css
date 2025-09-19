@@ -35,12 +35,12 @@ ul {
 }
 
 .max-w-common {
-    max-width: 96vw;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 0 4px;
+    padding: 0 8px;
 
     @media (width >=64rem) {
-        max-width: 92vw;
+        max-width: 1400px;
     }
 }
 

@@ -24,9 +24,7 @@ function NavBarContent({ AdditonalClass, Name, ClassToggle }) {
                     {/* -----------Nav-SubLinks----------  */}
                     <div
                         className={`${AdditonalClass} 
-                    relative w-56 bg-transparent opacity-100 transition-all duration-200 text-[var(--text-primary)] rounded-lg pointer-events-none  z-2
-                    xl:absolute xl:bg-white xl:opacity-0 xl:text-black/70 xl:translate-y-8 xl:top-8 xl:-left-7
-                     max-xl:group-hover:relative group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto`}
+                    relative w-56 bg-transparent opacity-100 transition-all duration-200 text-[var(--text-primary)] rounded-lg pointer-events-none z-30 xl:absolute xl:bg-white xl:opacity-0 xl:text-black/70 xl:translate-y-8 xl:top-8 xl:-left-7 max-xl:group-hover:relative group-hover:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto`}
                     >
                         <ul className="sublinks py-3 px-3 space-y-2">
                             {SubLinks.map((sublink) => (
