@@ -13,8 +13,6 @@ function Services() {
 
   const [cardIndex, setCardIndex] = useState(0)
 
-  console.log(cardIndex)
-
   const BgImages = [
     { BgUrl: ServicesBgImg1 },
     { BgUrl: ServicesBgImg2 },

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "aos/dist/aos.css";
+
 
 :root {
     --text-light: #ffffff;
@@ -12,8 +14,12 @@
 body {
     background-color: var(--color-dark);
     background-image: url(./assets/body_bg.png);
-    background-size: cover;
     color: var(--text-primary);
+}
+
+.font-pacifico {
+    font-family: "Pacifico", cursive;
+
 }
 
 h1,
