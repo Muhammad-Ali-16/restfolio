@@ -13,7 +13,7 @@ function NavBarContent({ AdditonalClass, Name, ClassToggle }) {
     ]
 
     return (
-        <ul className={`${Name}-links ${AdditonalClass} ${ClassToggle} flex-col xl:flex-row space-x-7 text-lg xl:text-xl mx-auto relative transition-all duration-600`}>
+        <ul className={`${Name}-links ${AdditonalClass} ${ClassToggle} flex-col xl:flex-row space-x-7 mx-auto relative transition-all duration-600`}>
             {/* -----------Nav-Links---------- */}
             <li className={`${Name}-link hover:text-[var(--text-secondary)] transition duration-200`}><Link to='/'>Home</Link></li>
             <li className={`${Name}-link relative transition duration-200`}>

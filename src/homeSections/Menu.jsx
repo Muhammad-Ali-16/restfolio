@@ -42,29 +42,32 @@ function Menu() {
   ]
 
   return (
-    <section className='menu-main pb-10'>
+    <section className='menu-main pb-10 bg-[url(/menu-pattern.png)] bg-center bg-cover'>
       <div className='menu-content-main max-w-7xl mx-auto px-2'>
-        <div className='text-center mt-28 flex items-center flex-col'>
+        <div className='text-center pt-28 flex items-center flex-col' data-aos='fade-in'>
           {/* -----------Menu-Main-Heading---------- */}
           <img src={Logo} alt="Logo" />
           <h1 className="menu-heading text-3xl xl:text-5xl font-bold my-6 text-[var(--text-light)]">Our Special Menus</h1>
           <h4 className="menu-sub-heading max-w-2xl mb-10">Proin at lorem justo. Sed maximus risus hendrerit ipsum sodales, vel consequat dui ultrices. Vestibulum ante ipsum primis in faucibus orci luctus.</h4>
         </div>
-        <div className="menu grid grid-rows-1 grid-cols-1 lg:grid-cols-2 bg-[var(--color-dark)] p-6 bg-[url(/noise.png)] bg-center rounded-4xl border-[10px] lg:border-[15px] border-[#333]">
+        <div
+          className="menu grid grid-rows-1 grid-cols-1 lg:grid-cols-2 bg-[var(--color-dark)] p-6 bg-[url(/noise.png)] bg-center rounded-4xl border-[10px] lg:border-[15px] border-[#333]"
+          data-aos='fade-in' data-aos-delay='100'
+        >
           {menuItems.map((category, i) => (
             // {/* -----------Menu-Cate---------- */}
             <div className='menu-category' key={i}>
-              <h4 className='menu-category-heading font-pacifico my-5 text-3xl text-[var(--text-light)]'>{category.category}</h4>
+              <h4 className='menu-category-heading font-pacifico my-5 text-2xl text-[var(--text-light)]'>{category.category}</h4>
               {/* -----------Menu-Main-Heading----------*/}
               {category.items.map((menu, j) => (
                 <div className='menu-items flex flex-col md:flex-row items-start md:items-center justify-center md:space-y-10 space-y-4 border-b border-dashed border-[#ffffff40] mb-5 mx-0 md:mx-5' key={j}>
                   <img src={menu.imgUrl} alt={menu.name} className='max-w-[90px] rounded-xl mt-3 md:mt-0 md:mx-4' />
                   <div className='menu-item-details'>
-                    <h4 className='text-[var(--text-light)] text-lg lg:text-xl font-bold'>{menu.name}</h4>
-                    <p className='max-w-[260px]'>{menu.discription}</p>
+                    <h4 className='text-[var(--text-light)] text-lg font-bold'>{menu.name}</h4>
+                    <p className='max-w-[260px] text-sm'>{menu.discription}</p>
                   </div>
                   <div className='menu-item-pricing'>
-                    <p className='text-[var(--text-light)] text-2xl'>{menu.price}</p>
+                    <p className='text-[var(--text-light)] text-lg'>{menu.price}</p>
                     <p className='line-through'>{menu.ogprice}</p>
                   </div>
                 </div>

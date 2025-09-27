@@ -11,10 +11,10 @@ function NavBar() {
       {/* -----------NavBar---------- */}
       <div className='navbar-content max-w-common flex flex-row justify-between items-center '>
         <div className="logo flex flex-row space-x-3 items-center cursor-pointer">
-          <h4 className='text-xl hover:text-[var(--text-secondary)] transition duration-200'>Menu</h4>
+          <h4 className='text-md hover:text-[var(--text-secondary)] transition duration-200'>Menu</h4>
           <div className='space-y-2'>
-            <span className='h-0.5 w-12 bg-white block'></span>
-            <span className='h-0.5 w-12 bg-white block'></span>
+            <span className='h-[1px] w-[50px] bg-white block'></span>
+            <span className='h-[1px] w-[50px] bg-white block'></span>
           </div>
         </div>
         <NavBarContent Name='nav' AdditonalClass='hidden xl:flex' />

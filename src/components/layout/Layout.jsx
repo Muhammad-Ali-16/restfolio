@@ -47,9 +47,9 @@ function Layout() {
                 <Outlet />
             </main>
             {/* <!----------Footer----------!> */}
-            <footer>
+            {/* <footer>
                 <Footer />
-            </footer>
+            </footer> */}
         </>
     )
 }

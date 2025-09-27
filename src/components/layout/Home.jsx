@@ -2,6 +2,7 @@ import Hero from '../../homeSections/Hero'
 import About from '../../homeSections/About'
 import Services from '../../homeSections/Services'
 import Menu from '../../homeSections/Menu'
+import Teams from '../../homeSections/Teams'
 
 function Home() {
 
@@ -11,6 +12,7 @@ function Home() {
       <About />
       <Services />
       <Menu />
+      <Teams />
     </section>
   )
 }
