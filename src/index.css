@@ -9,12 +9,15 @@
     --color-dark: #1b1b1b;
     --color-brown: #bd9675;
     --color-dark-2: #2e2e31;
+    --form-bg:#19191a;
 }
+
 
 body {
     background-color: var(--color-dark);
     background-image: url(./assets/body_bg.png);
     color: var(--text-primary);
+    
 }
 
 .font-pacifico {
