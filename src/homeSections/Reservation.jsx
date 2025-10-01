@@ -1,11 +1,12 @@
 
 function Reservation() {
     return (
-        <section className="reservation-main w-full relative h-auto py-12 xl:py-18 overflow-hidden">
+        <section className="reservation-main w-full relative h-auto py-12 xl:py-16 overflow-hidden">
             <div className="reservation-content-main max-w-7xl mx-auto">
                 <div
                     className=" mx-3 bg-[var(--form-bg)] grid grid-cols-1 gap-10 h-auto rounded-3xl relative
         bg-[url(/reservation-pattern.png)] bg-no-repeat bg-contain bg-center before:content-[''] before:absolute before:bg-[url(/reservation-img.png)] before:inset-0 before:bg-no-repeat before:bg-cover"
+                    data-aos="fade-in"
                 >
                     <div className="mx-auto text-center my-8 space-y-8 relative z-10">
                         <h1 className="text-5xl font-semibold text-[var(--text-light)]" >
@@ -27,7 +28,7 @@ function Reservation() {
                                                 type="text"
                                                 name="name"
                                                 autoComplete="name"
-                                                className="block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
+                                                className="font-josefin block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
                                             />
                                         </div>
                                     </div>
@@ -41,7 +42,7 @@ function Reservation() {
                                                 type="tel"
                                                 name="phone"
                                                 autoComplete="tel"
-                                                className="block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
+                                                className="font-josefin block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
                                             />
                                         </div>
                                     </div>
@@ -53,7 +54,7 @@ function Reservation() {
                                                 id="date"
                                                 type="date"
                                                 name="date"
-                                                className="block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
+                                                className="font-josefin block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
                                             />
                                         </div>
                                     </div>
@@ -65,7 +66,7 @@ function Reservation() {
                                                 id="time"
                                                 type="time"
                                                 name="time"
-                                                className="block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
+                                                className="font-josefin block w-full rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 placeholder:text-gray-500 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
                                             />
                                         </div>
                                     </div>
@@ -75,7 +76,7 @@ function Reservation() {
                                             <select
                                                 id="person"
                                                 name="person"
-                                                className="col-start-1 row-start-1 w-full appearance-none rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
+                                                className="font-josefin col-start-1 row-start-1 w-full appearance-none rounded-md bg-[var(--form-bg)] px-3 py-4 text-[var(--text-primary)] outline-1 -outline-offset-1 outline-[var(--text-primary)]/15 focus:outline-2 focus:-outline-offset-2 focus:outline-[var(--input-outline)] sm:text-sm/6"
                                             >
                                                 <option>1 Person</option>
                                                 <option>2 Persons</option>

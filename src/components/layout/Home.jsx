@@ -6,6 +6,7 @@ import Teams from '../../homeSections/Teams'
 import Video from '../../homeSections/Video'
 import Restaurant from '../../homeSections/Restaurant'
 import Reservation from '../../homeSections/Reservation'
+import Blog from '../../homeSections/Blog'
 
 function Home() {
 
@@ -19,6 +20,7 @@ function Home() {
       <Video />
       <Restaurant/>
       <Reservation/>
+      <Blog/>
     </section>
   )
 }
