@@ -7,6 +7,7 @@ import Video from '../../homeSections/Video'
 import Restaurant from '../../homeSections/Restaurant'
 import Reservation from '../../homeSections/Reservation'
 import Blog from '../../homeSections/Blog'
+import SocialMedia from '../../homeSections/SocialMedia'
 
 function Home() {
 
@@ -18,9 +19,10 @@ function Home() {
       <Menu />
       <Teams />
       <Video />
-      <Restaurant/>
-      <Reservation/>
-      <Blog/>
+      <Restaurant />
+      <Reservation />
+      <Blog />
+      <SocialMedia />
     </section>
   )
 }
