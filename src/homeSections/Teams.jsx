@@ -17,8 +17,8 @@ function Teams() {
             <div className='teams-content-main max-w-common px-2'>
                    {/* -----------Section-Main-Heading---------- */}
                 <div className="teams-heading" data-aos="fade-in">
-                    <h1 className="menu-heading text-3xl xl:text-5xl font-bold my-6 text-[var(--text-light)]">Our Team Members</h1>
-                    <h4 className="menu-sub-heading max-w-2xl mb-10">Proin at lorem justo. Sed maximus risus hendrerit ipsum sodales, vel consequat dui ultrices. Vestibulum ante ipsum primis in faucibus orci luctus.</h4>
+                    <h1 className="teams-heading text-3xl xl:text-5xl font-bold my-6 text-[var(--text-light)]">Our Team Members</h1>
+                    <h4 className="teams-sub-heading max-w-2xl mb-10">Proin at lorem justo. Sed maximus risus hendrerit ipsum sodales, vel consequat dui ultrices. Vestibulum ante ipsum primis in faucibus orci luctus.</h4>
                 </div>
                 <div className="team-content grid grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 place-items-center gap-2 gap-y-10" data-aos="fade-in" data-aos-delay="100">
                      {/* -----------Team-Members-Cards---------- */}

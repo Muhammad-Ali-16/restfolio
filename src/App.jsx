@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Layout from "./components/layout/Layout"
-import Home from './components/layout/Home'
 import './App.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Layout from "./components/layout/Layout"
+import Home from './components/layout/Home'
+import PagesHeader from './components/layout/PagesHeader'
+import PageAbout from './pages/PageAbout'
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
 
           <Route element={<Layout />}>
             <Route path="/" element={<><Home /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/about" element={<><PagesHeader title='About Us'/><PageAbout /></>}></Route>
           </Route>
 
         </Routes>
