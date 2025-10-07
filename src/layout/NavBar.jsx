@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Button from '../common/Button'
-import NavBarContent from '../common/NavBarContent'
+import Button from '../components/common/Button'
+import NavBarContent from '../components/common/NavBarContent'
 
 function NavBar() {
 
   const [isOverlayOpen, setIsOverlayOpen] = useState(false)
 
   return (
-    <nav className='navbar-main w-full py-5 relative'>
+    <nav className='navbar-main w-full py-5 relative z-[999]'>
       {/* -----------NavBar---------- */}
       <div className='navbar-content max-w-common flex flex-row justify-between items-center '>
         <div className="logo flex flex-row space-x-3 items-center cursor-pointer">
@@ -26,7 +26,7 @@ function NavBar() {
       </div>
       {/* -----------OverlayBar---------- */}
       <div className="overlaybar-content mx-2">
-        <NavBarContent Name={'overlay'} AdditonalClass='flex xl:hidden' ClassToggle={isOverlayOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'} />
+        <NavBarContent Name={'overlay'} AdditonalClass='flex block xl:hidden' ClassToggle={isOverlayOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'} />
       </div>
 
     </nav>

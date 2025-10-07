@@ -1,6 +1,6 @@
-import Button from '../components/common/Button'
-import AboutImg2 from '../assets/about-1.jpg'
-import AboutImg1 from '../assets/about-2.jpg'
+import Button from '../../components/common/Button'
+import AboutImg2 from '../../assets/about-1.jpg'
+import AboutImg1 from '../../assets/about-2.jpg'
 
 
 function About() {

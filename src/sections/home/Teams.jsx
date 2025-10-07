@@ -1,7 +1,7 @@
-import TeamImg1 from '../assets/team-1.jpg'
-import TeamImg2 from '../assets/team-2.jpg'
-import TeamImg3 from '../assets/team-3.jpg'
-import TeamImg4 from '../assets/team-4.jpg'
+import TeamImg1 from '../../assets/team-1.jpg'
+import TeamImg2 from '../../assets/team-2.jpg'
+import TeamImg3 from '../../assets/team-3.jpg'
+import TeamImg4 from '../../assets/team-4.jpg'
 
 function Teams() {
 

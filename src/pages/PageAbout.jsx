@@ -1,11 +1,11 @@
 import Logo from '../assets/logoicon.svg'
-import Teams from "../homeSections/Teams"
-import Reservation from "../homeSections/Reservation"
-import SocialMedia from "../homeSections/SocialMedia"
-import Services from "../homeSections/Services"
-import About from '../homeSections/About'
-import Brands from './Brands'
-import Testimonials from './Testimonials'
+import Teams from "../sections/home/Teams"
+import Reservation from "../sections/home/Reservation"
+import SocialMedia from "../sections/home/SocialMedia"
+import Services from "../sections/home/Services"
+import About from '../sections/home/About'
+import Brands from '../sections/shared/Brands'
+import Testimonials from '../sections/shared/Testimonials'
 
 function PageAbout() {
     return (

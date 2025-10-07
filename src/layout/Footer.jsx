@@ -1,5 +1,4 @@
-import Button from '../common/Button'
-
+import Button from '../components/common/Button'
 function Footer() {
 
   const FooterLinks = [

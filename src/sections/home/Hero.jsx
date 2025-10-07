@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import HeroImg1 from '../assets/hero-1.jpg'
-import HeroImg2 from '../assets/hero-2.jpg'
-import Button from '../components/common/Button'
+import HeroImg1 from '../../assets/hero-1.jpg'
+import HeroImg2 from '../../assets/hero-2.jpg'
+import Button from '../../components/common/Button'
 
 function Hero() {
 

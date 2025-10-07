@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import VideoUrl from '../assets/video.mp4'
+import VideoUrl from '../../assets/video.mp4'
 
 function Video() {
 

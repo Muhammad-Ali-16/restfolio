@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Icon1 from '../assets/services-icon-4.svg'
-import Icon2 from '../assets/services-icon-2.svg'
-import Icon3 from '../assets/services-icon-3.svg'
-import Icon4 from '../assets/services-icon-4.svg'
-import ServicesBgImg1 from '../assets/services-1.jpg'
-import ServicesBgImg2 from '../assets/services-2.jpg'
-import ServicesBgImg3 from '../assets/services-3.jpg'
-import ServicesBgImg4 from '../assets/services-4.jpg'
+import Icon1 from '../../assets/services-icon-4.svg'
+import Icon2 from '../../assets/services-icon-2.svg'
+import Icon3 from '../../assets/services-icon-3.svg'
+import Icon4 from '../../assets/services-icon-4.svg'
+import ServicesBgImg1 from '../../assets/services-1.jpg'
+import ServicesBgImg2 from '../../assets/services-2.jpg'
+import ServicesBgImg3 from '../../assets/services-3.jpg'
+import ServicesBgImg4 from '../../assets/services-4.jpg'
 
 
 function Services() {

@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import TestimonialsImg1 from '../assets/team-1.jpg'
-import TestimonialsImg2 from '../assets/team-2.jpg'
-import TestimonialsImg3 from '../assets/team-3.jpg'
-import TestimonialsImg4 from '../assets/team-4.jpg'
+import TestimonialsImg1 from '../../assets/team-1.jpg'
+import TestimonialsImg2 from '../../assets/team-2.jpg'
+import TestimonialsImg3 from '../../assets/team-3.jpg'
+import TestimonialsImg4 from '../../assets/team-4.jpg'
 
 
 function Testimonials() {
@@ -20,7 +20,7 @@ function Testimonials() {
 
   return (
     <section className='testimonials-main max-w-common'>
-      <div className='testimonials-content-main bg-[url(/testimonials-bg.jpg)] py-[120px] lg:py-[150px] bg-cover bg-no-repeat'>
+      <div className='testimonials-content-main bg-[url(/testimonials-bg.jpg)] py-[120px] bg-cover bg-no-repeat'>
         {/* -----------Testimonials-Main-Heading---------- */}
         <div className='testimonials-heading-main pb-6 flex flex-col justify-center items-center'>
           <h2

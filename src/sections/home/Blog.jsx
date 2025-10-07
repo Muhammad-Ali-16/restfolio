@@ -2,10 +2,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import Logo from '../assets/logoicon.svg'
-import BlogImg1 from '../assets/blog-1.jpg'
-import BlogImg2 from '../assets/blog-2.jpg'
-import BlogImg3 from '../assets/blog-3.jpg'
+import Logo from '../../assets/logoicon.svg'
+import BlogImg1 from '../../assets/blog-1.jpg'
+import BlogImg2 from '../../assets/blog-2.jpg'
+import BlogImg3 from '../../assets/blog-3.jpg'
 
 function Blog() {
 

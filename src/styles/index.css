@@ -9,15 +9,15 @@
     --color-dark: #1b1b1b;
     --color-brown: #bd9675;
     --color-dark-2: #2e2e31;
-    --form-bg:#19191a;
+    --form-bg: #19191a;
 }
 
 
 body {
     background-color: var(--color-dark);
-    background-image: url(./assets/body_bg.png);
+    background-image: url(../assets/body_bg.png);
     color: var(--text-primary);
-    
+
 }
 
 .font-pacifico {
@@ -25,8 +25,8 @@ body {
 
 }
 
-.font-josefin{
-   font-family: "Josefin Sans", sans-serif;  
+.font-josefin {
+    font-family: "Josefin Sans", sans-serif;
 }
 
 h1,
@@ -111,4 +111,19 @@ ul {
         transform: translateY(-2px);
     }
 
+}
+
+
+@keyframes spin-slow {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 22s linear infinite;
 }

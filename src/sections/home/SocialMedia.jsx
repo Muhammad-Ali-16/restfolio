@@ -2,14 +2,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import SocialImg1 from '../assets/menu-3.jpg'
-import SocialImg2 from '../assets/restaurant-1.jpg'
-import SocialImg3 from '../assets/about-2.jpg'
-import SocialImg4 from '../assets/social-4.jpg'
-import SocialImg5 from '../assets/services-3.jpg'
-import SocialImg6 from '../assets/blog-1.jpg'
-import SocialImg7 from '../assets/about-1.jpg'
-import SocialImg8 from '../assets/blog-3.jpg'
+import SocialImg1 from '../../assets/menu-3.jpg'
+import SocialImg2 from '../../assets/restaurant-1.jpg'
+import SocialImg3 from '../../assets/about-2.jpg'
+import SocialImg4 from '../../assets/social-4.jpg'
+import SocialImg5 from '../../assets/services-3.jpg'
+import SocialImg6 from '../../assets/blog-1.jpg'
+import SocialImg7 from '../../assets/about-1.jpg'
+import SocialImg8 from '../../assets/blog-3.jpg'
 
 function SocialMedia() {
 

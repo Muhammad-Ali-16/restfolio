@@ -1,5 +1,5 @@
-import RestaurantImg1 from '../assets/restaurant-1.jpg'
-import RestaurantImg2 from '../assets/restaurant-2.jpg'
+import RestaurantImg1 from '../../assets/restaurant-1.jpg'
+import RestaurantImg2 from '../../assets/restaurant-2.jpg'
 
 function Restaurant() {
   return (
