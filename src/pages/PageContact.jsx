@@ -99,10 +99,9 @@ function PageContact() {
             </form>
           </div>
         </div>
-
       </div>
 
-    {/* -----------Rotating-Icon---------- */}
+      {/* -----------Rotating-Icon---------- */}
       <div className="mt-32 flex justify-center items-center relative 
       after:content-[''] after:absolute after:inset-0 
       after:bg-[length:16px_1.5px] after:bg-repeat-x 
