@@ -15,7 +15,7 @@
 
 body {
     background-color: var(--color-dark);
-    background-image: url(../assets/body_bg.png);
+    background-image: url(/body_bg.png);
     color: var(--text-primary);
 
 }
@@ -27,6 +27,10 @@ body {
 
 .font-josefin {
     font-family: "Josefin Sans", sans-serif;
+}
+
+.font-oswald{
+    font-family: "Oswald", sans-serif;
 }
 
 h1,
@@ -126,4 +130,24 @@ ul {
 
 .animate-spin-slow {
     animation: spin-slow 22s linear infinite;
+}
+
+.rotating-icon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 50%, #d12d2d 50%);
+    background-repeat: repeat-x;
+    background-size: 16px 1.5px;
+    animation: moving-bg 1.5s linear infinite;
+}
+
+@keyframes moving-bg {
+    0% {
+        background-position: 16px 0;
+    }
+
+    100% {
+       background-position: 0 0;
+    }
 }

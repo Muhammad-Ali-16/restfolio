@@ -8,7 +8,7 @@ import Home from './pages/Home'
 import PagesHeader from './layout/PagesHeader'
 import PageAbout from './pages/PageAbout'
 import PageContact from "./pages/PageContact";
-
+import PageFaq from "./pages/PageFaq";
 
 function App() {
 
@@ -32,6 +32,9 @@ function App() {
           </Route>
           <Route element={<Layout />}>
             <Route path="/contact" element={<><PagesHeader title='Contact Us' /><PageContact /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/faq" element={<><PagesHeader title='FAQ Page' /><PageFaq /></>}></Route>
           </Route>
 
 
