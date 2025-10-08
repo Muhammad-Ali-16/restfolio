@@ -9,6 +9,7 @@ import PagesHeader from './layout/PagesHeader'
 import PageAbout from './pages/PageAbout'
 import PageContact from "./pages/PageContact";
 import PageFaq from "./pages/PageFaq";
+import PagePortfolio from "./pages/PagePortfolio";
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route element={<Layout />}>
             <Route path="/faq" element={<><PagesHeader title='FAQ Page' /><PageFaq /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/portfolio" element={<><PagesHeader title='Our Portfolio' /><PagePortfolio /></>}></Route>
           </Route>
 
 
