@@ -10,6 +10,7 @@ import PageAbout from './pages/PageAbout'
 import PageContact from "./pages/PageContact";
 import PageFaq from "./pages/PageFaq";
 import PagePortfolio from "./pages/PagePortfolio";
+import PagePortfolioSingle from "./pages/PagePortfolioSingle";
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route element={<Layout />}>
             <Route path="/portfolio" element={<><PagesHeader title='Our Portfolio' /><PagePortfolio /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/portfoliosingle" element={<><PagesHeader title='Single Portfolio' /><PagePortfolioSingle /></>}></Route>
           </Route>
 
 

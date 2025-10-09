@@ -17,6 +17,7 @@ body {
     background-color: var(--color-dark);
     background-image: url(/body_bg.png);
     color: var(--text-primary);
+    scroll-behavior: smooth;
 
 }
 
