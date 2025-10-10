@@ -9,7 +9,7 @@ import Icon2 from '../../assets/services-icon-2.svg';
 import Icon3 from '../../assets/services-icon-3.svg';
 import Icon4 from '../../assets/services-icon-4.svg';
 
-function PageServices() {
+function SharedServices() {
   const Cards = [
     { ImgUrl: Icon1, Heading: 'Fresh Product', Description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consectetur id sint.' },
     { ImgUrl: Icon2, Heading: 'Skilled Chefs', Description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consectetur id sint.' },
@@ -72,7 +72,7 @@ function PageServices() {
             <SwiperSlide key={i}>
               <div className="services-card cursor-pointer">
                 <div className="card-content m-10 text-center">
-                  <img src={card.ImgUrl} alt="Service Icon" className="mx-auto max-w-[80px]" />
+                  <img src={card.ImgUrl} alt="Service Icon" loading='lazy' className="mx-auto max-w-[80px]" />
                   <h3 className="text-[var(--text-light)] my-8 text-lg xl:text-2xl font-bold">{card.Heading}</h3>
                   <p>{card.Description}</p>
                   <button className="px-8 py-3 my-6 rounded-full text-md bg-transparent border text-white border-[#fff3] transition-all duration-200 hover:border-[var(--text-secondary)] hover:bg-[var(--text-secondary)]">
@@ -89,4 +89,4 @@ function PageServices() {
   );
 }
 
-export default PageServices;
+export default SharedServices;

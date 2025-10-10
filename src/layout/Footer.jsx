@@ -1,40 +1,5 @@
 import Button from '../components/common/Button'
 function Footer() {
-
-  const FooterLinks = [
-    {
-      heading: 'Social', links: [
-        { name: 'Facebook', path: '?' },
-        { name: 'Twitter', path: '?' },
-        { name: 'Instagram', path: '?' },
-        { name: 'Linkedin', path: '?' },
-      ]
-    },
-    {
-      heading: 'More Services', links: [
-        { name: 'About us', path: '?' },
-        { name: 'Case Studies ', path: '?' },
-        { name: 'Privacy Policy', path: '?' },
-        { name: 'Contact us', path: '?' },
-      ]
-    },
-    {
-      heading: 'Working Hours', links: [
-        { name: 'SUNDAY TO TUESDAY', path: '?' },
-        { name: '7.00am - 6.00pm', path: '?' },
-        { name: 'FRIDAY TO SATURDAY', path: '?' },
-        { name: '8.00am - 6.00pm', path: '?' },
-      ]
-    },
-    {
-      heading: 'Contact', links: [
-        { name: '785 15h Street - Sydney Harbor Bridge of Sydney, #Australia.', path: '?' },
-        { name: 'contact@resfolio.com', path: '?' },
-        { name: '+444 3322 111 00', path: '?' },
-      ]
-    },
-  ]
-
   return (
     <footer className='footer-main mx-2 py-10 lg:py-16'>
       <div className="footer-content-main max-w-6xl mx-auto flex flex-col justify-center items-center">
@@ -52,16 +17,103 @@ function Footer() {
         </div>
         {/* -----------Footer-Links-Main---------- */}
         <div className="footer-links-main grid grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 py-10 md:py-14 border-y border-dashed border-[#ffffff4f]">
-          {FooterLinks.map((footer, i) => (
-            <div key={i}>
-              <h3 className='text-lg text-white my-7'>{footer.heading}</h3>
-              <ul className="footer-links text-sm space-y-3">
-                {footer.links.map((link, j) => (
-                  <li className='footer-link' key={j}><a href={link.path} className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>{link.name}</a></li>
-                ))}
-              </ul>
-            </div>
-          ))}
+
+          <div className='footer-link'>
+            <h3 className='text-lg text-white my-7'>Social</h3>
+            <ul className="footer-links text-sm space-y-3">
+              <li className='footer-link'>
+                <a
+                  href='?'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Facebook
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='?'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Twitter
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='?'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Instagram
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='?'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className='footer-link'>
+            <h3 className='text-lg text-white my-7'>More Services</h3>
+            <ul className="footer-links text-sm space-y-3">
+              <li className='footer-link'>
+                <a
+                  href='/about'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  About us
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='/privacy_policy'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Case Studies
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='/privacy_policy'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Privacy Policy
+                </a>
+              </li>
+              <li className='footer-link'>
+                <a
+                  href='/contact'
+                  className='font-josefin transition-all duration-150 hover:text-[var(--text-secondary)]'>
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className='footer-link'>
+            <h3 className='text-lg text-white my-7'>Working Hours</h3>
+            <ul className="footer-links text-sm space-y-3">
+              <li className='footer-link'>
+                <h3>SUNDAY TO TUESDAY</h3>
+                <h5>7.00am - 6.00pm</h5>
+              </li>
+              <li className='footer-link'>
+                <h3>FRIDAY TO SATURDAY</h3>
+                <h5>8.00am - 6.00pm</h5>
+              </li>
+            </ul>
+          </div>
+
+          <div className='footer-link'>
+            <h3 className='text-lg text-white my-7'>Contact</h3>
+            <ul className="footer-links text-sm space-y-3">
+              <li className='footer-link'>
+                785 15h Street - Sydney Harbor Bridge of Sydney, #Australia.
+              </li>
+              <li className='footer-link'>
+                <h5>contact@resfolio.com</h5>
+                <h5>+444 3322 111 00</h5>
+              </li>
+
+            </ul>
+          </div>
+
         </div>
         {/* -----------Footer-Bottom-Main---------- */}
         <div className='footer-bottom mt-4'>

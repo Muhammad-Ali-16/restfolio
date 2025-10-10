@@ -71,7 +71,7 @@ function Testimonials() {
                 <div className='testimonials-card pb-6 flex flex-col justify-center items-center text-center space-y-10' >
                   <h5 className="card-discription max-w-2xl text-lg xl:text-2xl">{testimonialsCard.discription}</h5>
                   <div className="card-info flex flex-row text-start space-x-6 items-center">
-                    <img src={testimonialsCard.imgUrl} alt={`testimonial-img-${i + 1}`} className='h-[90px] w-[90px] rounded-full' />
+                    <img src={testimonialsCard.imgUrl} alt={`testimonial-img-${i + 1}`} loading='lazy' className='h-[90px] w-[90px] rounded-full' />
                     <div className='space-y-1'>
                       <h3 className='text-[var(--text-light)] text-xl font-semibold'>{testimonialsCard.name}</h3>
                       <h6 className='text-[var(--color-brown)] text-sm'>Restaurant Clients</h6>

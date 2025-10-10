@@ -42,7 +42,7 @@ function PageContact() {
             <div className="contact-info grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 my-7 lg:my-12 ">
               {ContactInfo.map((info, i) => (
                 <div className="info-content flex flex-row space-x-5" key={i}>
-                  <img src={info.imgUrl} alt={`${info.contactType}-icon`} />
+                  <img src={info.imgUrl} alt={`${info.contactType}-icon`} loading='lazy'/>
                   <div className='icon space-y-1'>
                     <h5 className='text-lg'>Our {info.contactType}</h5>
                     <h3 className='text-[var(--text-light)] text-lg'>{info.detail}</h3>

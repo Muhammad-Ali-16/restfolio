@@ -40,7 +40,7 @@ function Brands() {
         <div className='brands-images grid grid-rows-1 grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 place-items-center' data-aos='fade-in'>
           {BrandsImgs.map((brandImg, i) => (
             <div key={i} className="flex items-center justify-center w-full h-22 sm:h-28 transition-all duration-250 cursor-pointer border border-white/20 hover:border-white">
-              <img src={brandImg.img} alt={`Brand ${i + 1}`} className="max-h-full max-w-full object-contain" />
+              <img src={brandImg.img} alt={`Brand ${i + 1}`} loading='lazy' className="max-h-full max-w-full object-contain" />
             </div>
           ))}
         </div>

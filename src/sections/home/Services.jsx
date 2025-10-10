@@ -31,7 +31,7 @@ function Services() {
     <section className={`services-main h-full relative overflow-hidden`}>
       {/* -----------Services-Background-Images---------- */}
       {BgImages.map((Img, i) => (
-        <img src={Img.BgUrl} alt="Background Image" key={i} className={`w-full h-full absolute inset-0 -z-2 transition-ease-in-out duration-600  object-cover ${cardIndex === i ? 'opacity-100 scale-100' : 'opacity-0 scale-115'}`} />
+        <img src={Img.BgUrl} alt="Background Image" loading='lazy' key={i} className={`w-full h-full absolute inset-0 -z-2 transition-ease-in-out duration-600  object-cover ${cardIndex === i ? 'opacity-100 scale-100' : 'opacity-0 scale-115'}`} />
       ))}
       <div className="services-overlay bg-black/70 absolute inset-0 -z-1"></div>
       <div className='services-content-main max-w-common'>
@@ -40,7 +40,7 @@ function Services() {
           {Cards.map((card, i) => (
             <div className={`services-card cursor-pointer ${i < Cards.length - 1 ? 'max-xl:border-b xl:border-e border-[#fff3]' : ''}`} onMouseEnter={() => { setCardIndex(i) }} key={i}>
               <div className='card-content m-10'>
-                <img src={card.ImgUrl} alt="Services-Icon" className='mx-auto max-w-[80px]' />
+                <img src={card.ImgUrl} alt="Services-Icon" loading='lazy' className='mx-auto max-w-[80px]' />
                 <h3 className='text-[var(--text-light)] my-8 text-lg xl:text-2xl font-bold'>{card.Heading}</h3>
                 <p>{card.Discription}</p>
                 <button className="px-8 py-3 my-6 rounded-full text-md bg-transparent border text-white border-[#fff3] transition-all duration-200 hover:border-[var(--text-secondary)] hover:bg-[var(--text-secondary)]">

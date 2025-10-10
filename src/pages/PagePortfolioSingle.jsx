@@ -4,9 +4,6 @@ import Logo from '../assets/logoicon.svg';
 import Icon1 from '../assets/services-icon-4.svg';
 import Icon2 from '../assets/services-icon-2.svg';
 import Icon3 from '../assets/services-icon-3.svg';
-import ProductImg1 from '../assets/porfolio_1.jpg'
-import ProductImg2 from '../assets/porfolio_2.jpg'
-import ProductImg3 from '../assets/porfolio_3.jpg'
 import PortfolioBanner from '../assets/single-portfolio-banner.png'
 import PortfolioImg1 from '../assets/single-portfolio-img-1.jpg'
 import FastFoodImg1 from '../assets/porfolio_2.jpg'
@@ -30,9 +27,9 @@ function PagePortfolioSingle() {
     }, [index]);
 
     const PortfolioCards = [
-        { imgUrl: ProductImg1, heading: 'French Fries Ketchup', discription: 'Recipes / Food' },
-        { imgUrl: ProductImg2, heading: 'Tomato And Sauces', discription: 'Restaurant' },
-        { imgUrl: ProductImg3, heading: 'French Fries', discription: 'Coffee / Food' },
+        { Cardindex: '0', imgUrl: FastFoodImg1, heading: 'Explore Our Fast Food Creations', discription: 'Fast Food' },
+        { Cardindex: '3', imgUrl: IcecreamImg1, heading: 'Sweet Ice Cream Delights', discription: 'Icecreams' },
+        { Cardindex: '2', imgUrl: Restaurantmg2, heading: 'Signature Restaurant Dishes', discription: 'Restaurant' },
     ]
 
     const PortfolioProducts = [
@@ -79,7 +76,7 @@ function PagePortfolioSingle() {
         <section className='page-portfolio-single-main mt-12'>
             <div className="page-portfolio-single-content-main max-w-common">
                 {/* -----------Portfolio-Banner-Image---------- */}
-                <img src={PortfolioImg1} alt="portfolio-banner" className='w-auto h-auto mx-auto rounded-3xl' />
+                <img src={PortfolioImg1} loading='lazy' alt="portfolio-banner" className='w-auto h-auto mx-auto rounded-3xl' />
 
                 <div className="portfolio grid grid-rows-1 grid-cols-1 xl:grid-cols-3 my-12 gap-10" ref={sectionRef} >
                     {/* -----------Portfolio-Info---------- */}
@@ -97,8 +94,8 @@ function PagePortfolioSingle() {
                         </div>
 
                         <div className="product-imgs my-8 grid grid-rows-1 grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
-                            <img src={PortfolioProducts[index].ImgUrl1} alt="portfolio-img" className='rounded-3xl' />
-                            <img src={PortfolioProducts[index].ImgUrl2} alt="portfolio-img" className='rounded-3xl' />
+                            <img src={PortfolioProducts[index].ImgUrl1} loading='lazy' alt="portfolio-img" className='rounded-3xl' />
+                            <img src={PortfolioProducts[index].ImgUrl2} loading='lazy' alt="portfolio-img" className='rounded-3xl' />
                         </div>
 
                         <div className="portfolio-goals my-8 space-y-4">
@@ -119,7 +116,7 @@ function PagePortfolioSingle() {
                                 {PortfolioProducts[index].Cards.map((card, i) => (
                                     <div className="tips-card cursor-pointer" key={i}>
                                         <div className="card-content m-10 text-center">
-                                            <img src={card.ImgUrl} alt="Card Icon" className="mx-auto max-w-[80px]" />
+                                            <img src={card.ImgUrl} loading='lazy' alt="Card Icon" className="mx-auto max-w-[80px]" />
                                             <h3 className="card-heading text-[var(--text-light)] my-8 text-lg xl:text-2xl font-bold">{card.Heading}</h3>
                                             <p className='card-discription'>{card.Description}</p>
                                         </div>
@@ -194,7 +191,7 @@ function PagePortfolioSingle() {
 
                         {/* -----------Portfolio-Banner---------- */}
                         <div className="image-banner">
-                            <img src={PortfolioBanner} alt="portfolio-banner" className='mx-auto' />
+                            <img src={PortfolioBanner} loading='lazy' alt="portfolio-banner" className='mx-auto' />
                         </div>
                     </div>
                 </div>
@@ -215,16 +212,16 @@ function PagePortfolioSingle() {
                     <div className='grid grid-rows-1 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 py-12'>
                         {PortfolioCards.map((card, i) => (
                             <div key={i} className='portfolio-card text-center flex flex-col items-center group'>
-                                <a href='?'>
+                                <button onClick={() => { setIndex(card.Cardindex) }}>
                                     <div className='card-img relative'>
-                                        <img src={card.imgUrl} alt={`${card.heading} Image`} loading='lazy' className='xl:max-w-[380px] md:max-w-[350px] object-cover rounded-3xl' />
+                                        <img src={card.imgUrl} alt={`${card.heading} Image`} className='xl:max-w-[380px] md:max-w-[350px] object-cover rounded-3xl' />
                                         <div className="overlay bg-black/0 absolute inset-0 rounded-3xl group-hover:bg-black/65 transition-all duration-100"></div>
                                     </div>
                                     <div className='card-content my-5 space-y-2'>
                                         <h3 className='text-white text-2xl lg:text-3xl group-hover:text-[var(--text-secondary)] transition-all duration-100'>{card.heading}</h3>
                                         <h6 className='text-sm'>{card.discription}</h6>
                                     </div>
-                                </a>
+                                </button>
                             </div>
                         ))}
                     </div>

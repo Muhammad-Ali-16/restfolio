@@ -34,6 +34,10 @@ body {
     font-family: "Oswald", sans-serif;
 }
 
+.text-border {
+  -webkit-text-stroke: 1.3px #b5b5b534;
+}
+
 h1,
 h2,
 h3,

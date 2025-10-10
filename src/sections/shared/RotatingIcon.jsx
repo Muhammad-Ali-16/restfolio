@@ -33,6 +33,7 @@ function RotatingIcon() {
                         src="/contact_rotate_icon.svg"
                         alt="icon"
                         className="w-[55px] md:w-[65px] lg:w-[80px]"
+                        loading='lazy'
                     />
                 </span>
             </div>

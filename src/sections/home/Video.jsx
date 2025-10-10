@@ -10,18 +10,22 @@ function Video() {
             <div className='video-content text-white relative z-2 flex justify-center items-center h-screen'>
                 {/* -----------Video-Overlay---------- */}
                 <button className='play-btn text-2xl border border-white rounded-full h-32 w-32 cursor-pointer' onClick={() => { setIsOpen(true) }}><i className="bi bi-play-fill"></i></button>
-                <div className={`video-overlay bg-black/85 h-screen w-screen absolute inset-0 ${isOpen ? 'block' : 'hidden'}`}>
-                    <button className='absolute top-5 right-10 cursor-pointer' onClick={() => { setIsOpen(false) }}><i className="bi bi-x-lg text-xl"></i></button>
-                </div>
-                {/* -----------Video---------- */}
-                <div className={`video overflow-hidden absolute mx-2 rounded-lg ${isOpen ? 'block' : 'hidden'}`}>
-                    <video
-                        src={VideoUrl}
-                        className="w-full md:h-[70vh] h-auto object-cover"
-                        controls
-                        muted
-                    />
-                </div>
+                {isOpen && (
+                    <div className='video-overlay bg-black/75 backdrop-blur-xs h-[100vh] w-full fixed z-50 inset-0 flex justify-center items-center'>
+                        <button
+                            className='absolute top-5 right-10 cursor-pointer text-white text-2xl'
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <i className='bi bi-x-lg'></i>
+                        </button>
+
+                        <video
+                            src={VideoUrl}
+                            className='w-[90%] md:w-[70%] lg:w-[60%] rounded-lg'
+                            controls
+                        />
+                    </div>
+                )}
             </div>
 
         </section>

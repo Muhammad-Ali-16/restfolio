@@ -7,7 +7,7 @@ function NavBar() {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false)
 
   return (
-    <nav className='navbar-main w-full py-5 relative z-[999]'>
+    <nav className='navbar-main w-full py-5 relative z-20'>
       {/* -----------NavBar---------- */}
       <div className='navbar-content max-w-common flex flex-row justify-between items-center '>
         <div className="logo flex flex-row space-x-3 items-center cursor-pointer">

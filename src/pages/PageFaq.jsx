@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import PageServices from "../sections/shared/PageServices";
+import PageServices from "../sections/shared/SharedServices";
 import SocialMedia from "../sections/home/SocialMedia";
 import RotatingIcon from "../sections/shared/RotatingIcon";
 import faqImg1 from "../assets/faq-1.jpg";

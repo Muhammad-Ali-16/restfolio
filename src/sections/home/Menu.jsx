@@ -61,7 +61,7 @@ function Menu() {
               {/* -----------Menu-Main-Heading----------*/}
               {category.items.map((menu, j) => (
                 <div className='menu-items flex flex-col md:flex-row items-start md:items-center justify-center md:space-y-10 space-y-4 border-b border-dashed border-[#ffffff40] mb-5 mx-0 md:mx-5' key={j}>
-                  <img src={menu.imgUrl} alt={menu.name} className='max-w-[90px] rounded-xl mt-3 md:mt-0 md:mx-4' />
+                  <img src={menu.imgUrl} alt={menu.name} loading='lazy' className='max-w-[90px] rounded-xl mt-3 md:mt-0 md:mx-4' />
                   <div className='menu-item-details'>
                     <h4 className='text-[var(--text-light)] text-lg font-bold'>{menu.name}</h4>
                     <p className='max-w-[260px] text-sm'>{menu.discription}</p>

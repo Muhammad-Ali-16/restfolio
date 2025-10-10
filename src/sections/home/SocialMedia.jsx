@@ -64,7 +64,7 @@ function SocialMedia() {
                     {SocialMediaImages.map((data, i) => (
                         <SwiperSlide key={i}>
                             <div className='relative'>
-                                <img src={data.imgUrl} alt="social-img" className='cursor-pointer object-cover mx-auto w-[350px] h-[350px]' />
+                                <img src={data.imgUrl} alt="social-img" loading='lazy' className='cursor-pointer object-cover mx-auto w-[350px] h-[350px]' />
                                 <div className="overlay absolute inset-0 transition-all duration-300 bg-black/60 hover:opacity-100 opacity-0 flex justify-center items-center text-2xl text-white"><a href="/"><i className="bi bi-instagram"></i></a></div>
                             </div>
                         </SwiperSlide>

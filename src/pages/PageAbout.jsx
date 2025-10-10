@@ -4,7 +4,7 @@ import SocialMedia from "../sections/home/SocialMedia"
 import About from '../sections/home/About'
 import Brands from '../sections/shared/Brands'
 import Testimonials from '../sections/shared/Testimonials'
-import PageServices from '../sections/shared/PageServices'
+import PageServices from '../sections/shared/SharedServices'
 
 function PageAbout() {
     return (

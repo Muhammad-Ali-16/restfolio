@@ -31,7 +31,7 @@ function PagePortfolio() {
                         <div key={i} className='portfolio-card text-center flex flex-col items-center group'>
                             <a href='?'>
                                 <div className='card-img relative'>
-                                    <img src={card.imgUrl} alt={`${card.heading} Image`} loading='lazy' className='xl:max-w-[380px] md:max-w-[350px] object-cover rounded-3xl' />
+                                    <img src={card.imgUrl} alt={`${card.heading} Image`} className='xl:max-w-[380px] md:max-w-[350px] object-cover rounded-3xl' />
                                     <div className="overlay bg-black/0 absolute inset-0 rounded-3xl group-hover:bg-black/65 transition-all duration-100"></div>
                                 </div>
                                 <div className='card-content my-5 space-y-2'>

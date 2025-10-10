@@ -36,7 +36,7 @@ function Layout() {
                 </div>
             </div>
             {/* <!----------Header----------!> */}
-            <header className='header-main'>
+            <header className='header-main relative z-2'>
                 <div className='header-content'>
                     <TopBar />
                     <NavBar />

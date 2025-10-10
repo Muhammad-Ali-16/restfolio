@@ -25,7 +25,7 @@ function Hero() {
 
 
   return (
-    <section className='hero-main overflow-x-hidden select-none'>
+    <section className='hero-main overflow-x-hidden select-none relative z-1'>
       <div className='hero-content relative h-[100vh] flex items-center justify-center'>
         {/* -----------Carousel-Main---------- */}
         {carouselContents.map((content, i) => (

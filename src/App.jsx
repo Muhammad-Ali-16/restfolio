@@ -11,6 +11,9 @@ import PageContact from "./pages/PageContact";
 import PageFaq from "./pages/PageFaq";
 import PagePortfolio from "./pages/PagePortfolio";
 import PagePortfolioSingle from "./pages/PagePortfolioSingle";
+import PageServices from "./pages/PageServices";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PageError from "./pages/PageError";
 
 function App() {
 
@@ -44,6 +47,16 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/portfoliosingle" element={<><PagesHeader title='Single Portfolio' /><PagePortfolioSingle /></>}></Route>
           </Route>
+          <Route element={<Layout />}>
+            <Route path="/services" element={<><PagesHeader title='Our Services' /><PageServices /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/privacy_policy" element={<><PagesHeader title='Privacy Policy' /><PrivacyPolicy /></>}></Route>
+          </Route>
+          <Route element={<Layout />}>
+            <Route path="/error" element={<><PageError /></>}></Route>
+          </Route>
+
 
 
         </Routes>

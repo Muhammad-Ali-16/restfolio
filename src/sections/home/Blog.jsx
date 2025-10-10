@@ -68,7 +68,7 @@ function Blog() {
                                 <div className='blog-card-main select-none border-b border-dashed border-white/30 pb-6' key={i}>
                                     <div className='card-content flex flex-col'>
                                         <div className='card-img relative text-center'>
-                                            <img src={card.imgUrl} className=' rounded-lg' alt='blog-img'/>
+                                            <img src={card.imgUrl} className=' rounded-lg' loading='lazy' alt='blog-img'/>
                                             <h4 className='absolute top-5 right-5 bg-[var(--color-dark)] px-3 py-1 rounded-lg'>{card.date} <br /> {card.month}</h4>
                                         </div>
                                         <div className='card-info'>

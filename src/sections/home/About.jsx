@@ -22,7 +22,7 @@ function About() {
                         <p>Donec maximus ligula dapibus sem sagittis, eu efficitur tellus malesuada. In hac habitasse platea. Praesent consequat mauris nec pulvinar.</p>
                         <Button Text='More About +' Name="about-btn" AdditonalClass='bg-[var(--text-secondary)] text-[var(--text-light)] mt-6'data-aos="fade-in" />
                     </div>
-                    <img src={AboutImg2} alt="about-img" className='hidden xl:block max-w-sm relative -top-40' data-aos="fade-in"/>
+                    <img src={AboutImg2} alt="about-img" loading='lazy' className='hidden xl:block max-w-sm relative -top-40' data-aos="fade-in"/>
                 </div>
             </div>
         </section>

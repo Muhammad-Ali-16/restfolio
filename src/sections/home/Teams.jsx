@@ -27,7 +27,7 @@ function Teams() {
                             <div
                                 className='relative overflow-hidden  flex flex-col justify-center items-center before:content-[] before:w-full before:h-[50%] transition-all duration-300 group-hover:before:opacity-100 group-focus:opacity-100 before:opacity-0 before:bg-linear-to-t before:from-[var(--color-dark)] before:to-transparent before:absolute before:bottom-0
                             '>
-                                <img src={cardContent.ImgUrl} alt={`${cardContent.Name} Image`} className='max-w-[300px]' />
+                                <img src={cardContent.ImgUrl} alt={`${cardContent.Name} Image`} loading='lazy' className='max-w-[300px]' />
                                 <div
                                     className="social-icons flex flex-row space-x-6 bg-[var(--color-dark)] bg-[url(/noise.png)] px-6 py-3 rounded-lg text-sm absolute transition-all duration-300 opacity-0 group-hover:opacity-100 group-focus:opacity-100 -bottom-16 group-hover:bottom-4 group-focus:bottom-4"
                                 >
