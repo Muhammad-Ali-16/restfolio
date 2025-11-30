@@ -7,7 +7,7 @@ Restfolio is a clean and professional restaurant/business website template — i
 **Features:**
 - Modern and clean design  
 - Built with HTML, CSS (and JS if used) — easily customizable  
-- Fully responsive layout (desktop, tablet, mobile) :contentReference[oaicite:0]{index=0}  
+- Fully responsive layout (desktop, tablet, mobile)  
 - Sections for menu, about, contact, gallery or portfolio — ready for adaptation  
 - Easy to tweak content, styling, and assets  
  
@@ -20,12 +20,12 @@ Restfolio is a clean and professional restaurant/business website template — i
    ```bash
    npm install
    ```  
-3. Set up your API key in the configuration file or environment variable.  
-4. Run the application:  
+
+3. Run the application:  
    ```bash
    npm start
    ```  
-5. Open the app in your browser or terminal (depending on your setup) and start chatting with the bot.  
+4. Open the app in your browser or terminal (depending on your setup).  
 
 - `index.html` — entry page / layout  
 - CSS and JS files (e.g. `style.css`, custom JS) — for styling and interactivity  
