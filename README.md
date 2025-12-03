@@ -30,7 +30,7 @@ Restfolio is a clean and professional restaurant/business website template — i
 - `index.html` — entry page / layout  
 - CSS and JS files (e.g. `style.css`, custom JS) — for styling and interactivity  
 - Asset folders — images, icons, fonts  
-- Additional pages or sections (menu, gallery, contact, etc.) if provided  
+- Additional pages or sections (menu, gallery, contact, etc.)  
 
 ## Author
 Muhammad Ali — [GitHub Profile](https://github.com/Muhammad-Ali-16)
